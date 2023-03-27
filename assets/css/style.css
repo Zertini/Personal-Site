@@ -9,7 +9,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/octopus\ king.jpg") top right no-repeat;
+  background: #747474 url("../img/octopus-king.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -18,9 +18,15 @@ body::before {
   z-index: -1;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1000px) {
   body::before {
+    transition-delay: 60ms;
+    transition-duration: 80ms;
     background-attachment: fixed;
+    filter: blur(10px);
+    transform: scale(1.1);
+    background-blend-mode: multiply;
+    
   }
 }
 
@@ -53,6 +59,7 @@ h6 {
   z-index: 997;
   overflow-y: auto;
 }
+
 
 #header * {
   transition: ease-in-out 0.3s;
