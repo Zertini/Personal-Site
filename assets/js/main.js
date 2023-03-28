@@ -261,17 +261,38 @@ function showSub() {
 
 
 // back to top button
-let mybutton = document.getElementById("myBtn");
 
-window.onscroll = function() {scrollFunction()};
+let mybuttonEden = document.getElementById("myBtnEden");
 
-function scrollFunction() {
+function scrollFunction1() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    mybuttonEden.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    mybuttonEden.style.display = "none";
   }
 }
+
+let mybuttonDva = document.getElementById("myBtnDva");
+
+function scrollFunction2() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybuttonDva.style.display = "block";
+  } else {
+    mybuttonDva.style.display = "none";
+  }
+}
+
+let mybuttonTri = document.getElementById("myBtnTri");
+
+function scrollFunction3() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybuttonTri.style.display = "block";
+  } else {
+    mybuttonTri.style.display = "none";
+  }
+}
+
+window.onscroll = function() {scrollFunction1(),scrollFunction2(),scrollFunction3()};
 
 function topFunction() {
   document.body.scrollTop = 0;
