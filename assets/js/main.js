@@ -262,37 +262,37 @@ function showSub() {
 
 // back to top button
 
-let mybuttonEden = document.getElementById("myBtnEden");
+let mybuttonAbout = document.getElementById("myBtnAbout");
 
-function scrollFunction1() {
+function scrollFunctionAbout() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybuttonEden.style.display = "block";
+    mybuttonAbout.style.display = "block";
   } else {
-    mybuttonEden.style.display = "none";
+    mybuttonAbout.style.display = "none";
   }
 }
 
-let mybuttonDva = document.getElementById("myBtnDva");
+let mybuttonResume = document.getElementById("myBtnResume");
 
-function scrollFunction2() {
+function scrollFunctionResume() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybuttonDva.style.display = "block";
+    mybuttonResume.style.display = "block";
   } else {
-    mybuttonDva.style.display = "none";
+    mybuttonResume.style.display = "none";
   }
 }
 
-let mybuttonTri = document.getElementById("myBtnTri");
+let mybuttonPortfolio = document.getElementById("myBtnPortfolio");
 
-function scrollFunction3() {
+function scrollFunctionPortfolio() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybuttonTri.style.display = "block";
+    mybuttonPortfolio.style.display = "block";
   } else {
-    mybuttonTri.style.display = "none";
+    mybuttonPortfolio.style.display = "none";
   }
 }
 
-window.onscroll = function() {scrollFunction1(),scrollFunction2(),scrollFunction3()};
+window.onscroll = function() {scrollFunctionAbout(),scrollFunctionResume(),scrollFunctionPortfolio()};
 
 function topFunction() {
   document.body.scrollTop = 0;
